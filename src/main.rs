@@ -1,4 +1,6 @@
 mod palindrome;
+mod romand_to_int;
 fn main() {
-    palindrome::test();
+    romand_to_int::test();
+    //palindrome::test();
 }

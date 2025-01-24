@@ -4,8 +4,10 @@
 use std::{char, str::Chars};
 
 pub fn test() {
-    palindrome("Anna".chars());
-
+    palindrome_num(12321);
+    palindrome("Rentner".chars());
+    palindrome("test".chars());
+    palindrome("😏💀d💀😏".chars());
 }
 
 fn palindrome_num(num: i32) {
@@ -20,11 +22,11 @@ fn palindrome(chars: Chars<'_>) {
             if ele.eq_ignore_ascii_case(char_end) {
                 continue;
             } else {
-                println!("{} => No Palindrome", chars.as_str());
+                println!("{} => No Palindrom! ❌", chars.as_str());
                 return;
             }
         }
     }
 
-    println!("{} => Is Palindrome :D!", chars.as_str());
+    println!("{} => Is Palindrome! ✅", chars.as_str());
 }
